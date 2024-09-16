@@ -19,6 +19,7 @@
         <!--Ajout de la navbar bootstrap responsive lg est le breakpoint -->
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
+                <img src="/assets/photos/logo zoo.png" width="80" height="80" alt="logo Arcadia"> 
               <a class="navbar-brand" href="#">Arcadia</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,7 +52,29 @@
     <main id="main-page">
         <!-- Le contenu de ma page sera injecté ici -->
     </main>
-    <footer>Le footer de mon site
+
+     <!-- Footer -->
+    <footer class="bg-dark text-white text-center footer">
+        <div class="row">
+            <div class="col-6 col-lg-4">
+                <h3 class="text-secondary">Nos horaires</h3>
+                <div id="horaires"></div>
+            </div>
+            <div class="col-6 col-lg-4">
+                <p>Eco Zoo Arcadia<br/>
+                    Forêt de Brocéliande<br/>
+                    France
+                </p>
+            </div>
+            <div class="col-6 col-lg-4">
+                <p>Mail</p>
+            </div>
+            <div class="col-12 ">
+                <p>Mentions légales</p>
+            </div>
+        </div>
+       
+    </footer>
 
         <!-- Lien pour le routage front end javascript -->
     <script type="module" src="../Router/router.js"></script>
