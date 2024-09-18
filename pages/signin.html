@@ -11,12 +11,19 @@
         <div class="mb-3">
           <label for="EmailInput" class="form-label">Email</label>
           <input type="email" class="form-control" id="EmailInput" placeholder="exemple@mail.fr" >
+          <div class="invalid-feedback">
+            Le mail n'est pas au bon format!
+          </div>
         </div>
         <div class="mb-3">
           <label for="PasswordInput" class="form-label">Mot de passe</label>
           <input type="password" class="form-control" id="PasswordInput">
+<!--affichage d'un message d'erreur si le mot de passe n'est pas valide -->
+          <div class="invalid-feedback">
+              Le mot de passe n'est pas assez robuste!
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Connexion</button>
+        <button type="submit" class="btn btn-primary" id ="btn-validation-connexion">Connexion</button>
       </form>
 </div>
 
