@@ -7,6 +7,7 @@ const btnValidation = document.getElementById("btn-validation-connexion");
 //l'événement à écouter se déroule au moment du relachement de la touche du clavier
 inputEmail.addEventListener("keyup", validateForm);
 inputPassword.addEventListener("keyup", validateForm);
+btnValidation.addEventListener("click", checkCredentials)
 
 function validateForm(){
    const emailOk = validateMail(inputEmail);
@@ -55,5 +56,27 @@ else{
     return false;
 }   
     }
+
+function checkCredentials(){
+    //ici il faudra l'api pour verifier les credentials en BDD
+    if(inputEmail.value == "test@mail.com" && inputPassword.value =="Password1234!"){
+        alert("vous êtes connecté");
+
+    //il faudra récuérer le vrai token
+    const token ="jjnsjnshhehkdksjyfyfncnsjzjqkdskk";
+        setToken(token);
+    //placer ce token en cookie
+    
+
+
+        window.location.replace("/");
+    }
+    else{
+        inputEmail.classList.add("is-invalid");
+        inputPassword.classList.add("is-invalid");
+    }
+}
+
+
 
 
